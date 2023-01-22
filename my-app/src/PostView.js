@@ -7,7 +7,7 @@ const PostView = () => {
     const [isLoading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:3008/all')
+        fetch('https://instaaclone-app.onrender.com/all')
             .then(response => response.json())
             .then(data => setData(data))
             .catch(error => console.error(error))
@@ -34,7 +34,7 @@ const PostView = () => {
                     </span>
                 </section>
                 <section className="card-image">
-                    <img src={`http://localhost:3008/images/${item.image}`} alt="place" />
+                    <img src={`https://instaaclone-app.onrender.com/images/${item.image}`} alt="place" />
                 </section>
                 <section className="card-actions">
                     <span>

@@ -25,7 +25,7 @@ function UploadPost(){
         formData.append("image", image)
         formData.append("description", description)
         async function handleClick(){
-          await fetch("http://localhost:3008/api", {
+          await fetch("https://instaaclone-app.onrender.com/api", {
             method: 'POST',
             body: formData
         })
