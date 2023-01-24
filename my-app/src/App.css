@@ -1,14 +1,14 @@
 .form-page{
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
+  border: 5px solid blueviolet;
   padding: 30px;
   border-radius: 10px;
 }
 .form-button{
   height: 30px;
-  background-color: #4361ee;
+  background-color: blueviolet;
   border: none;
   border-radius: 4px;
   color: white;
@@ -19,11 +19,21 @@
   height: 15px;
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid gray;
+  border: 2px solid rgb(40, 2, 2);
 }
 .form-address{
   height: 15px;
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid gray;
+  border: 2px solid rgb(40, 2, 2);
+}
+input{
+  border: 2px solid rgb(40, 2, 2);
+  border-radius: 3px;
+  /* padding: 5px; */
+}
+textarea{
+  border-radius: 3px;
+  border: 2px solid rgb(40, 2, 2);
+  padding: 5px;
 }

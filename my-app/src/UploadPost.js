@@ -25,7 +25,7 @@ function UploadPost(){
         formData.append("image", image)
         formData.append("description", description)
         async function handleClick(){
-          await fetch("https://instaaclone-app.onrender.com/api", {
+          await fetch("https://instaaclone-appp.onrender.com/api", {
             method: 'POST',
             body: formData
         })
@@ -38,6 +38,18 @@ function UploadPost(){
     }
 
     return (
+      <>
+          <nav className="header">
+                <section className="logo">
+                    <img src={require("./images/clone.png")} alt="log" />
+                </section>
+                <section className="camera-icon">
+                    <Link to="/upload">
+                        <img src={require('./images/cam.png')} alt="camera" />
+                    </Link>
+                </section>
+            </nav>
+      
         <div className="form-page" style={styles.container}>
             <input className="form-name" placeholder="Username" value={name}  onChange={(e) => setUsername(e.target.value)}/>
             <input className="form-address" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)}/>
@@ -50,6 +62,7 @@ function UploadPost(){
               <button className="form-button" onClick={handleClick} >Submit</button>
             </Link>
         </div>
+        </>
     );
 }
 

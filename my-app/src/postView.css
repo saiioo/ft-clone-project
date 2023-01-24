@@ -55,7 +55,7 @@
 
 .header {
   display: flex;
-  border: 1px solid gray;
+  border: 1px solid #006238;
   border-radius: 5px;
   padding: 5px;
 }
@@ -67,8 +67,8 @@
 .camera-icon img {
   width: 50px;
 }
-/* .logo{
+.logo{
   width: 100px;
   height: 100px;
   object-fit: contain;
-} */
+}

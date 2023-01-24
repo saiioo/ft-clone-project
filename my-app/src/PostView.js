@@ -7,7 +7,7 @@ const PostView = () => {
     const [isLoading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://instaaclone-app.onrender.com/all')
+        fetch('https://instaaclone-appp.onrender.com/all')
             .then(response => response.json())
             .then(data => setData(data))
             .catch(error => console.error(error))
@@ -19,9 +19,10 @@ const PostView = () => {
     }
     console.log(data)
 
+    const reverseData = data.reverse()
 
 
-    const renData = data.map((item, index) => {
+    const renData = reverseData.map((item, index) => {
         return (
             <section key={index} className="card">
                 <section className="card-header">
@@ -34,7 +35,7 @@ const PostView = () => {
                     </span>
                 </section>
                 <section className="card-image">
-                    <img src={`https://instaaclone-app.onrender.com/images/${item.image}`} alt="place" />
+                    <img src={`https://instaaclone-appp.onrender.com/images/${item.image}`} alt="place" />
                 </section>
                 <section className="card-actions">
                     <span>
@@ -76,8 +77,12 @@ const PostView = () => {
                 <img src={require("../../images/camera.png")} alt="camera"/>
                 </section>
             </nav> */}
+            <p>facing problem? Refresh the page</p>
             {renData}
         </>
     )
 }
 export default PostView;
+
+
+
